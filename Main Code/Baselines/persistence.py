@@ -98,7 +98,7 @@ gap = args.gap
 
 # 9. Run evaluation
 metrics = evaluate_persistence_model(
-    data_dir="/home/tushar/Weather Prediction/Code/Baselines/Full_world_eight_year_Data",
+    data_dir="/home/anonymus/Weather Prediction/Code/Baselines/Full_world_eight_year_Data",
     pred_var=pred_var,
     gap=gap,
     start_year=2016,
@@ -111,7 +111,7 @@ metrics = evaluate_persistence_model(
 
 import json
 
-def save_metrics_to_json(metrics_per_step, out_steps, pred_var, gap, filename="/home/tushar/Weather Prediction/Code/Main Code/Results/Direct Forecasting Results/Persistence_Direct_Forecasting_result.json"):
+def save_metrics_to_json(metrics_per_step, out_steps, pred_var, gap, filename="/home/anonymus/Weather Prediction/Code/Main Code/Results/Direct Forecasting Results/Persistence_Direct_Forecasting_result.json"):
     # Load existing data if file exists
     if os.path.exists(filename):
         with open(filename, "r") as f:

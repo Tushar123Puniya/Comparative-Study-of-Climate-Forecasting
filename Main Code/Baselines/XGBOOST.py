@@ -49,7 +49,7 @@ import dask.dataframe as dd
 from concurrent.futures import ProcessPoolExecutor
 
 # Define the folder path
-folder_path = "/home/tushar/Weather Prediction/Code/Baselines/Full_world_eight_year_Data"
+folder_path = "/home/anonymus/Weather Prediction/Code/Baselines/Full_world_eight_year_Data"
 
 # Get a sorted list of all CSV files in the folder
 csv_files = sorted([os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith('.csv.gz')])
@@ -562,7 +562,7 @@ _ = evaluate_xgboost(
 import os
 import json
 
-def save_metrics_to_json(metrics_per_step, out_steps, pred_var, gap, filename="/home/tushar/Weather Prediction/Code/Main Code/Results/Direct Forecasting Results/XGBoost_Direct_Forecasting_result.json"):
+def save_metrics_to_json(metrics_per_step, out_steps, pred_var, gap, filename="/home/anonymus/Weather Prediction/Code/Main Code/Results/Direct Forecasting Results/XGBoost_Direct_Forecasting_result.json"):
     # Load existing data if file exists
     if os.path.exists(filename):
         with open(filename, "r") as f:

@@ -42,7 +42,7 @@ import pandas as pd
 from concurrent.futures import ProcessPoolExecutor
 
 # Define the folder path
-folder_path = "/home/tushar/Weather Prediction/Data/Delhi_Data"
+folder_path = "/home/anonymus/Weather Prediction/Data/Delhi_Data"
 
 # Get a sorted list of all CSV files in the folder
 csv_files = sorted([os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith('.csv.gz')])
@@ -727,7 +727,7 @@ def evaluate(model, loader, latitude_grid, output_mean, output_std):
 
 print('Checkpoint checking...')
 # Path to the checkpoint
-checkpoint_path = f'/home/tushar/Weather Prediction/Code/SPAE_Transformer/Delhi Checkpoints/{pred_var}_main_model_last_model.pth'
+checkpoint_path = f'/home/anonymus/Weather Prediction/Code/SPAE_Transformer/Delhi Checkpoints/{pred_var}_main_model_last_model.pth'
 
 # Check if the checkpoint file exists
 if os.path.exists(checkpoint_path):
@@ -846,7 +846,7 @@ for epoch in range(start_epoch, end_epoch + 1):
 
 # Load the best model weights for evaluation
 print('Evaluating the model on test data')
-best_model_path = f"/home/tushar/Weather Prediction/Code/Main Model/Delhi Checkpoints/{pred_var}_main_model_best_model.pth"
+best_model_path = f"/home/anonymus/Weather Prediction/Code/Main Model/Delhi Checkpoints/{pred_var}_main_model_best_model.pth"
 
 # Load the checkpoint
 checkpoint = torch.load(best_model_path,map_location = device)

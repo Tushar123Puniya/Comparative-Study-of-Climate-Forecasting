@@ -43,7 +43,7 @@ from concurrent.futures import ProcessPoolExecutor
 
 # Define the folder path
 # Define the folder path
-folder_path = "/home/tushar/Weather Prediction/Data/Delhi_Data"
+folder_path = "/home/anonymus/Weather Prediction/Data/Delhi_Data"
 lat = 8    # while running on full world data set it to 32
 lon = 8    # while running on full world data set it to 64
 
@@ -694,8 +694,8 @@ model = model.to(device)
 optimizer = optim.AdamW(model.parameters(), lr=5e-4, weight_decay=1e-5)
 criterion = LatitudeWeightedRMSELoss(latitude_tensor)
 
-best_model_path = f'/home/tushar/Weather Prediction/Code/Main Code/Checkpoints/continuous_unet_sattn2_best_model{pred_var}.pth'
-last_model_path = f'/home/tushar/Weather Prediction/Code/Main Code/Checkpoints/continuous_unet_sattn2_last_model{pred_var}.pth'
+best_model_path = f'/home/anonymus/Weather Prediction/Code/Main Code/Checkpoints/continuous_unet_sattn2_best_model{pred_var}.pth'
+last_model_path = f'/home/anonymus/Weather Prediction/Code/Main Code/Checkpoints/continuous_unet_sattn2_last_model{pred_var}.pth'
 
 print("Training Starts...")
 # Train Model
@@ -707,7 +707,7 @@ model.load_state_dict(checkpoint['model_state_dict'])
 import os
 import json
 
-def save_metrics_to_json(metrics_per_step, out_steps, pred_var, gap, filename="/home/tushar/Weather Prediction/Code/Main Code/Results/Continuous Forecasting Results/Unet_continuous_result.json"):
+def save_metrics_to_json(metrics_per_step, out_steps, pred_var, gap, filename="/home/anonymus/Weather Prediction/Code/Main Code/Results/Continuous Forecasting Results/Unet_continuous_result.json"):
     # Load existing data if file exists
     if os.path.exists(filename):
         with open(filename, "r") as f:

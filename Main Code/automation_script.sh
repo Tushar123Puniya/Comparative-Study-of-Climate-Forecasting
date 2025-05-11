@@ -5,16 +5,16 @@ TARGET_SCREEN_NAME="ram"
 
 # Paths to scripts
 SCRIPT_PATHS=(
-    # "/home/tushar/Weather Prediction/Code/Baselines/Resnet.py"
-    # "/home/tushar/Weather Prediction/Code/Baselines/CL_Unet.py"
-    # "/home/tushar/Weather Prediction/Code/Baselines/ViT.py"
-    "/home/tushar/Weather Prediction/Code/Main Model/Unet.py"
-    # "/home/tushar/Weather Prediction/Code/Main Model/Unet_MLP.py"
-    # "/home/tushar/Weather Prediction/Code/Main Model/Unet_sattn.py"
-    # "/home/tushar/Weather Prediction/Code/Main Model/LSTM.py"
-    # "/home/tushar/Weather Prediction/Code/Main Model/climatology.py"
-    # "/home/tushar/Weather Prediction/Code/Main Model/persistence.py"
-    # "/home/tushar/Weather Prediction/Code/Main Model/XGBOOST.py"
+    # "/home/anonymus/Weather Prediction/Code/Baselines/Resnet.py"
+    # "/home/anonymus/Weather Prediction/Code/Baselines/CL_Unet.py"
+    # "/home/anonymus/Weather Prediction/Code/Baselines/ViT.py"
+    "/home/anonymus/Weather Prediction/Code/Main Model/Unet.py"
+    # "/home/anonymus/Weather Prediction/Code/Main Model/Unet_MLP.py"
+    # "/home/anonymus/Weather Prediction/Code/Main Model/Unet_sattn.py"
+    # "/home/anonymus/Weather Prediction/Code/Main Model/LSTM.py"
+    # "/home/anonymus/Weather Prediction/Code/Main Model/climatology.py"
+    # "/home/anonymus/Weather Prediction/Code/Main Model/persistence.py"
+    # "/home/anonymus/Weather Prediction/Code/Main Model/XGBOOST.py"
 )
 
 # Variables to predict

@@ -7,7 +7,7 @@ import xarray as xr
 import pandas as pd
 
 # Load the NetCDF datasets
-ds = xr.open_dataset('/home/tushar/Weather Prediction/Data/Delhi Data/2016P1.nc')
+ds = xr.open_dataset('/home/anonymus/Weather Prediction/Data/Delhi Data/2016P1.nc')
 
 latitudes = ds.variables['latitude'][:32].values  # Convert to numpy array (floats)
 longitudes = ds.variables['longitude'][:64].values  # Convert to numpy array (floats)
@@ -27,11 +27,11 @@ import xarray as xr
 
 for year in range(2016,2024):
     # Load the NetCDF datasets
-    ds1 = xr.open_dataset(f'/home/tushar/Weather Prediction/Data/Delhi Data/{year}P1.nc')
-    ds2 = xr.open_dataset(f'/home/tushar/Weather Prediction/Data/Delhi Data/{year}P2.nc')
-    ds3 = xr.open_dataset(f'/home/tushar/Weather Prediction/Data/Delhi Data/{year}P3.nc')
-    ds4 = xr.open_dataset(f'/home/tushar/Weather Prediction/Data/Delhi Data/{year}S1.nc')
-    ds5 = xr.open_dataset(f'/home/tushar/Weather Prediction/Data/Delhi Data/{year}S2.nc')
+    ds1 = xr.open_dataset(f'/home/anonymus/Weather Prediction/Data/Delhi Data/{year}P1.nc')
+    ds2 = xr.open_dataset(f'/home/anonymus/Weather Prediction/Data/Delhi Data/{year}P2.nc')
+    ds3 = xr.open_dataset(f'/home/anonymus/Weather Prediction/Data/Delhi Data/{year}P3.nc')
+    ds4 = xr.open_dataset(f'/home/anonymus/Weather Prediction/Data/Delhi Data/{year}S1.nc')
+    ds5 = xr.open_dataset(f'/home/anonymus/Weather Prediction/Data/Delhi Data/{year}S2.nc')
     
     import pandas as pd
 
